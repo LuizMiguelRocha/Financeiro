@@ -12,4 +12,13 @@ public class Gerenciamento
    {
     return nome;
    }
+
+   public void SetValor (string Valor)
+   {
+      this.Valor = valor;
+   }
+   public string GetValor()
+   {
+      return valor;
+   }
 }
