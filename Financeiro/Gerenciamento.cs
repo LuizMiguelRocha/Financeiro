@@ -2,23 +2,23 @@ namespace Financeiro;
 public class Gerenciamento
 {
    string Nome;
-   Int64 Valor;
+   string Valor;
 
    public void SetNome (string Nome)
    {
-    this.Nome = nome;
+    this.Nome = Nome;
    }
    public string GetNome()
    {
-    return nome;
+    return Nome;
    }
 
    public void SetValor (string Valor)
    {
-      this.Valor = valor;
+      this.Valor = Valor;
    }
    public string GetValor()
    {
-      return valor;
+      return Valor;
    }
 }
