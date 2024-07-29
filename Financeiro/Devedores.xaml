@@ -12,7 +12,7 @@
         </Grid.RowDefinitions>
 
         <StackLayout Orientation="Horizontal" Grid.Row="0">
-            <ImageButton Source="back_icon.png" WidthRequest="30" HeightRequest="30" />
+            <ImageButton Source="voltar.png" WidthRequest="30" HeightRequest="30" />
             <Label Text="Devedores"
                    FontAttributes="Bold"
                    FontSize="Large"
@@ -47,7 +47,7 @@
 
         <StackLayout Grid.Row="2" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="10">
             <Entry Placeholder="Novo devedor" WidthRequest="200" />
-            <ImageButton Source="add_icon.png" WidthRequest="30" HeightRequest="30" />
+            <ImageButton Source="mais.png" WidthRequest="30" HeightRequest="30" />
         </StackLayout>
 
         <StackLayout Grid.Row="2" Orientation="Horizontal" HorizontalOptions="End" Spacing="10">
