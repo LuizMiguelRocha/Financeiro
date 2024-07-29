@@ -12,7 +12,7 @@
         </Grid.RowDefinitions>
 
         <StackLayout Orientation="Horizontal" Grid.Row="0">
-            <ImageButton Source="voltar.png" WidthRequest="30" HeightRequest="30" />
+            <ImageButton Source="voltar.png" WidthRequest="30" HeightRequest="30" Clicked="VoltarButton" />
             <Label Text="Devedores"
                    FontAttributes="Bold"
                    FontSize="Large"
@@ -51,8 +51,8 @@
         </StackLayout>
 
         <StackLayout Grid.Row="2" Orientation="Horizontal" HorizontalOptions="End" Spacing="10">
-            <ImageButton Source="edit_icon.png" WidthRequest="30" HeightRequest="30" />
-            <ImageButton Source="delete_icon.png" WidthRequest="30" HeightRequest="30" />
+            <ImageButton Source="editar.png" WidthRequest="30" HeightRequest="30" />
+            <ImageButton Source="lixeira.png" WidthRequest="30" HeightRequest="30" />
         </StackLayout>
     </Grid>
 

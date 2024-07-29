@@ -12,7 +12,7 @@ namespace Financeiro
 
         private void OnBackButtonClicked(object sender, EventArgs e)
         {
-            // Lógica para voltar à página anterior
+             Application.Current.MainPage = new SelecionarPage();
         }
 
         private void OnAddButtonClicked(object sender, EventArgs e)
