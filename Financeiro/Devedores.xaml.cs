@@ -15,9 +15,9 @@ namespace Financeiro
             Application.Current.MainPage = new SelecionarPage();
         }
 
-        private void OnAddButtonClicked(object sender, EventArgs e)
+        private void ButtonMais(object sender, EventArgs e)
         {
-            // Lógica para adicionar novo devedor
+           Application.Current.MainPage = new CadastrarDevedor();
         }
 
         private void OnEditButtonClicked(object sender, EventArgs e)

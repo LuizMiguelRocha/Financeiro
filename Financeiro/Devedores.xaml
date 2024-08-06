@@ -47,7 +47,7 @@
 
         <StackLayout Grid.Row="2" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="10">
             <Entry Placeholder="Novo devedor" WidthRequest="200" />
-            <ImageButton Source="mais.png" WidthRequest="30" HeightRequest="30" />
+            <ImageButton Source="mais.png" WidthRequest="30" HeightRequest="30" Clicked="ButtonMais"/>
         </StackLayout>
 
         <StackLayout Grid.Row="2" Orientation="Horizontal" HorizontalOptions="End" Spacing="10">
