@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Financeiro.CadastrarConta"
+             BackgroundColor="#B0C4DE">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Frame CornerRadius="20" BackgroundColor="#78909C" Padding="20">
+                <StackLayout>
+                    <Image Source="user_icon.png" HorizontalOptions="Center" />
+                    <Label Text="Cadastrar Conta" FontSize="Medium" HorizontalOptions="Center" TextColor="Black" />
+                    <Entry x:Name="NomeEntry" Placeholder="Nome" BackgroundColor="White" />
+                    <Entry x:Name="ValorEntry" Placeholder="Valor" Keyboard="Numeric" BackgroundColor="White" />
+                    <Entry x:Name="DataValidadeEntry" Placeholder="Data de Validade" BackgroundColor="White" />
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="20,0,0,0">
+                        <Button Text="Salvar" Clicked="OnSalvarClicked" BackgroundColor="White" TextColor="Black" />
+                        <Button Text="Cancelar" Clicked="OnCancelarClicked" BackgroundColor="White" TextColor="Black" Margin="20,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

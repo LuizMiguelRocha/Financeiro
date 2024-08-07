@@ -19,5 +19,10 @@ namespace Financeiro
         {
             Application.Current.MainPage = new ContasAPagarPage();
         }
+
+          private void MenuButton(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new MenuPage();
+        }
     }
 }

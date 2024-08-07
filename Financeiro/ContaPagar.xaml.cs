@@ -17,7 +17,7 @@ namespace Financeiro
 
         private void OnAddButtonClicked(object sender, EventArgs e)
         {
-            // Lógica para adicionar nova conta a pagar
+            Application.Current.MainPage = new CadastrarConta();
         }
 
         private void OnEditButtonClicked(object sender, EventArgs e)

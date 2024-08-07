@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Financeiro.MenuPage"
+             BackgroundColor="#607D8B">
+    <ContentPage.Content>
+        <Grid>
+
+            <!-- Menu Lateral -->
+            <StackLayout BackgroundColor="#B0BEC5" WidthRequest="50" Grid.Column="0">
+                <ImageButton Source="menu_icon.png" BackgroundColor="Transparent" WidthRequest="60" HeightRequest="60" Margin="10"/>
+            </StackLayout>
+            
+            <!-- Conteúdo Principal -->
+            <StackLayout Padding="20" Margin="80,0,0,0">
+                <StackLayout >
+                    <ImageButton Source="ajuda.png" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center"/>
+                    <Label Text="Ajuda" FontSize="Large" TextColor="Black" HorizontalOptions="Center" />
+                </StackLayout>
+                <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Margin="0,40,0,0">
+                    <ImageButton Source="sobre.png" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center"/>
+                    <Label Text="Sobre" FontSize="Large" TextColor="Black" HorizontalOptions="Center" />
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

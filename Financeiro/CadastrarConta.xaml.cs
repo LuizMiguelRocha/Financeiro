@@ -3,9 +3,9 @@ using Microsoft.Maui.Controls;
 
 namespace Financeiro
 {
-    public partial class CadastrarDevedor : ContentPage
+    public partial class CadastrarConta : ContentPage
     {
-        public CadastrarDevedor()
+        public CadastrarConta()
         {
             InitializeComponent();
         }
@@ -14,7 +14,7 @@ namespace Financeiro
         {
             string nome = NomeEntry.Text;
             string valor = ValorEntry.Text;
-            string pedido = PedidoEntry.Text;
+            string dataValidade = DataValidadeEntry.Text;
 
             // Adicione aqui a lógica para salvar os dados
 
@@ -26,15 +26,11 @@ namespace Financeiro
             // Limpar campos ou realizar outras ações de cancelamento
             NomeEntry.Text = string.Empty;
             ValorEntry.Text = string.Empty;
-            PedidoEntry.Text = string.Empty;
+            DataValidadeEntry.Text = string.Empty;
 
-            Application.Current.MainPage = new DevedoresPage();
+            Application.Current.MainPage = new ContasAPagarPage();
 
             await DisplayAlert("Cancelado", "Ação cancelada", "OK");
-        }
-               private void VoltarButton2(object sender, EventArgs e)
-        {
-           Application.Current.MainPage = new DevedoresPage();
         }
     }
 }

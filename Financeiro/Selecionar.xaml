@@ -12,7 +12,7 @@
         
 
         <StackLayout Grid.Column="0" BackgroundColor="#A3B1C2" Padding="10">
-            <Image Source="menu_icon.png" WidthRequest="30" HeightRequest="30" />
+            <ImageButton Source="menu.png" WidthRequest="30" HeightRequest="30" Clicked="MenuButton" />
         </StackLayout>
 
         <StackLayout Grid.Column="1" BackgroundColor="#5A6B7D" Padding="20">
