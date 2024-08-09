@@ -1,27 +1,30 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Financeiro.MenuPage"
-             BackgroundColor="#607D8B">
-    <ContentPage.Content>
-        <Grid>
+             x:Class="Financeiro.MenuPage">
 
-            <!-- Menu Lateral -->
-            <StackLayout BackgroundColor="#B0BEC5" WidthRequest="50" Grid.Column="0">
-                <ImageButton Source="menu_icon.png" BackgroundColor="Transparent" WidthRequest="60" HeightRequest="60" Margin="10"/>
-            </StackLayout>
-            
-            <!-- Conteúdo Principal -->
-            <StackLayout Padding="20" Margin="80,0,0,0">
-                <StackLayout >
-                    <ImageButton Source="ajuda.png" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center"/>
-                    <Label Text="Ajuda" FontSize="Large" TextColor="Black" HorizontalOptions="Center" />
-                </StackLayout>
-                <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Margin="0,40,0,0">
-                    <ImageButton Source="sobre.png" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center"/>
-                    <Label Text="Sobre" FontSize="Large" TextColor="Black" HorizontalOptions="Center" />
-                </StackLayout>
-            </StackLayout>
-        </Grid>
-    </ContentPage.Content>
+    <Grid BackgroundColor="#5A6B7D">
+        <!-- Sidebar -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <StackLayout BackgroundColor="#A3B1C2" Grid.Column="0">
+            <ImageButton Source="menu.png" HeightRequest="40" Margin="10" Clicked="MenuButton2"/>
+            <!-- Adicionar mais itens ao menu se necessário -->
+        </StackLayout>
+
+        <!-- Main Content -->
+        <StackLayout Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center">
+            <ImageButton Source="sobre.png" HeightRequest="100" Clicked="SobreButton"/>
+            <Label Text="Sobre" TextColor="Black" FontSize="Large" HorizontalOptions="Center" />
+
+            <ImageButton Source="ajuda.png" HeightRequest="100" Margin="20,50,20,0" Clicked="AjudaButton"/>
+            <Label Text="Ajuda" TextColor="Black" FontSize="Large" HorizontalOptions="Center" />
+        </StackLayout>
+    </Grid>
 </ContentPage>

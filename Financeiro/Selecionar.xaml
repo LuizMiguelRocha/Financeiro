@@ -41,6 +41,8 @@
                     HorizontalOptions="Center"
                     Padding="10,5"
                     CornerRadius="10"/>
+
+            <Image Source="crow2.png" HeightRequest="300" Margin="10" />            
         </StackLayout>
     </Grid>
 

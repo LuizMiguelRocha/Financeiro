@@ -9,7 +9,19 @@ namespace Financeiro
             InitializeComponent();
         }
 
-        // Aqui você pode adicionar lógica para os ícones de ajuda e sobre
-        // Por exemplo, navegando para outras páginas ou mostrando alertas
+            private void MenuButton2(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new SelecionarPage();
+        }
+
+             private void SobreButton(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new SelecionarPage();
+        }
+
+                private void AjudaButton(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new AjudaPage();
+        }
     }
 }
