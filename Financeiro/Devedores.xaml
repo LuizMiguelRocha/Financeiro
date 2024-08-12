@@ -29,20 +29,6 @@
                     <Label Text="Pedido:" FontSize="Medium" TextColor="Black" />
                 </StackLayout>
             </Frame>
-            <Frame BackgroundColor="White" CornerRadius="10" Padding="10">
-                <StackLayout>
-                    <Label Text="Nome:" FontSize="Medium" TextColor="Black" />
-                    <Label Text="Valor:" FontSize="Medium" TextColor="Black" />
-                    <Label Text="Pedido:" FontSize="Medium" TextColor="Black" />
-                </StackLayout>
-            </Frame>
-            <Frame BackgroundColor="White" CornerRadius="10" Padding="10">
-                <StackLayout>
-                    <Label Text="Nome:" FontSize="Medium" TextColor="Black" />
-                    <Label Text="Valor:" FontSize="Medium" TextColor="Black" />
-                    <Label Text="Pedido:" FontSize="Medium" TextColor="Black" />
-                </StackLayout>
-            </Frame>
         </StackLayout>
 
         <StackLayout Grid.Row="2" Orientation="Horizontal"  Spacing="10">

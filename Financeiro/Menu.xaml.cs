@@ -16,7 +16,7 @@ namespace Financeiro
 
              private void SobreButton(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new SelecionarPage();
+            Application.Current.MainPage = new SobrePage();
         }
 
                 private void AjudaButton(object sender, EventArgs e)

@@ -20,37 +20,35 @@
                    TextColor="Black"
                    Margin="10,0,0,0" />
         </StackLayout>
+         <ListView  x:Name="ContaPagar"
+                    HasUnevenRows="True"
+                    ItemSelected="Conta"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Fill">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <VerticalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label  Text="{Binding Nome}"
+                                    FontSize="20"/>
+                            <Label Text="{Binding Sobrenome}"
+                                    Margin="20,0,0,0"
+                                    FontSize="20"/>
+                        </HorizontalStackLayout>
+                            <Label Text="{Binding Telefone}"
+                                FontSize="14"/>
+                            <Label Text="{Binding Id}"
+                                    FontSize="50"
+                                    TextColor="Pink"/>
+                    </VerticalStackLayout> 
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+        </ListView>
 
-        <StackLayout Grid.Row="1" Spacing="10">
-            <Frame BackgroundColor="White" CornerRadius="10" Padding="10">
-                <StackLayout>
-                    <Label Text="Nome:" FontSize="Medium" TextColor="Black" />
-                    <Label Text="Valor:" FontSize="Medium" TextColor="Black" />
-                    <Label Text="Data Validade:" FontSize="Medium" TextColor="Black" />
-                </StackLayout>
-            </Frame>
-            <Frame BackgroundColor="White" CornerRadius="10" Padding="10">
-                <StackLayout>
-                    <Label Text="Nome:" FontSize="Medium" TextColor="Black" />
-                    <Label Text="Valor:" FontSize="Medium" TextColor="Black" />
-                    <Label Text="Data Validade:" FontSize="Medium" TextColor="Black" />
-                </StackLayout>
-            </Frame>
-            <Frame BackgroundColor="White" CornerRadius="10" Padding="10">
-                <StackLayout>
-                    <Label Text="Nome:" FontSize="Medium" TextColor="Black" />
-                    <Label Text="Valor:" FontSize="Medium" TextColor="Black" />
-                    <Label Text="Data Validade:" FontSize="Medium" TextColor="Black" />
-                </StackLayout>
-            </Frame>
-            <Frame BackgroundColor="White" CornerRadius="10" Padding="10">
-                <StackLayout>
-                    <Label Text="Nome:" FontSize="Medium" TextColor="Black" />
-                    <Label Text="Valor:" FontSize="Medium" TextColor="Black" />
-                    <Label Text="Data Validade:" FontSize="Medium" TextColor="Black" />
-                </StackLayout>
-            </Frame>
-        </StackLayout>
+        
+    
 
         <StackLayout Grid.Row="2" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="10">
             <ImageButton Source="editar.png" WidthRequest="40" HeightRequest="40" Clicked="OnEditButtonClicked" />

@@ -5,9 +5,14 @@ namespace Financeiro
 {
     public partial class ContasAPagarPage : ContentPage
     {
+
+          Controles.ClienteControle clienteControle = new Controles.ClienteControle();
+
         public ContasAPagarPage()
         {
             InitializeComponent();
+
+              ContaPagar.ItemsSource = clienteControle.LerTodos();
         }
 
         private void OnBackButtonClicked(object sender, EventArgs e)
@@ -29,5 +34,6 @@ namespace Financeiro
         {
             // Lógica para deletar conta a pagar
         }
+        
     }
 }
