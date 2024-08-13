@@ -15,7 +15,7 @@
                     <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="20,0,0,0">
                         <Button Text="Salvar" Clicked="OnSalvarClicked" BackgroundColor="White" TextColor="Black" />
                         <Button Text="Cancelar" Clicked="OnCancelarClicked" BackgroundColor="White" TextColor="Black" Margin="20,0,0,0"/>
-                    </StackLayout>
+                  </StackLayout>
                 </StackLayout>
             </Frame>
         </StackLayout>

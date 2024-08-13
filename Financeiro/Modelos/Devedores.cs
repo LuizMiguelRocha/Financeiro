@@ -1,5 +1,5 @@
 namespace Financeiro.Modelos;
-public class Devedores:Registro
+public class Devedores
 {
       string  Pedidos;
    

@@ -5,20 +5,20 @@
              BackgroundColor="#657b95">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="70"/>
+            <ColumnDefinition Width="50"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
         <!-- Menu Lateral -->
         <StackLayout Grid.Column="0" BackgroundColor="#9fb8d2">
-            <Label Text="☰" FontSize="Large" VerticalOptions="Start" HorizontalOptions="Center"/>
+            <ImageButton Source="menu.png"  VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="35" HeightRequest="35" Clicked="SobreMenuButton"/>
         </StackLayout>
 
         <!-- Conteúdo da Página -->
         <StackLayout Grid.Column="1" Padding="20">
-            <Label Text="Sobre" FontSize="24" HorizontalOptions="Center" TextColor="Black"/>
+            <Label Text="Sobre" FontSize="30" HorizontalOptions="Center" TextColor="Black"/>
             <Label Text="Esse software foi criado com o objetivo de ajudar você com as suas contas a pagar e a receber caso seja o o seu objetivo" 
-                   FontSize="16" TextColor="Black" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+                   FontSize="25" TextColor="Black" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
         </StackLayout>
     </Grid>
 </ContentPage>

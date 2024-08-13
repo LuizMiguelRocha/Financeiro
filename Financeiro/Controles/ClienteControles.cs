@@ -8,39 +8,39 @@ public class ClienteControle : BaseControle
 
   public ClienteControle() : base()
   {
-    NomeDaTabela = "ContaPagar";
+    NomeDaTabela = "Clientes";
   }
 
   //----------------------------------------------------------------------------
 
-  public virtual Registro? Ler(int idContaPagar)
+  public virtual Registro? Ler(int idCliente)
   {
-    var collection = liteDB.GetCollection<ContaPagar>(NomeDaTabela);
-    return collection.FindOne(d => d.Id == idContaPagar);
+    var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
+    return collection.FindOne(d => d.Id == idCliente);
   }
 
   //----------------------------------------------------------------------------
 
-  public virtual List<ContaPagar>? LerTodos()
+  public virtual List<Cliente>? LerTodos()
   {
-    var collection = liteDB.GetCollection<ContaPagar>(NomeDaTabela);
-    return new List<ContaPagar>(collection.FindAll().OrderBy(d => d.Nome));
+    var tabela = liteDB.GetCollection<Cliente>(NomeDaTabela);
+    return new List<Cliente>(tabela.FindAll().OrderBy(d => d.DataValidade));
   }
 
   //----------------------------------------------------------------------------
 
-  public virtual void Apagar(int idContaPagar)
+  public virtual void Apagar(int idCliente)
   {
-    var collection = liteDB.GetCollection<ContaPagar>(NomeDaTabela);
-    collection.Delete(idContaPagar);
+    var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
+    collection.Delete(idCliente);
   }
 
   //----------------------------------------------------------------------------
 
-  public virtual void CriarOuAtualizar(ContaPagar contapagar)
+  public virtual void CriarOuAtualizar(Cliente cliente)
   {
-    var collection = liteDB.GetCollection<ContaPagar>(NomeDaTabela);
-    collection.Upsert(contapagar);
+    var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
+    collection.Upsert(cliente);
   }
 
   //----------------------------------------------------------------------------

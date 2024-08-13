@@ -1,13 +1,18 @@
 using System;
+using Financeiro.Modelos;
 using Microsoft.Maui.Controls;
 
 namespace Financeiro
 {
     public partial class CadastrarConta : ContentPage
     {
+        public Cliente cliente {get ; set;}
+        Controles.ClienteControle clienteControle = new Controles.ClienteControle();
+
         public CadastrarConta()
         {
             InitializeComponent();
+            
         }
 
         private async void OnSalvarClicked(object sender, EventArgs e)
@@ -24,9 +29,6 @@ namespace Financeiro
         private async void OnCancelarClicked(object sender, EventArgs e)
         {
             // Limpar campos ou realizar outras ações de cancelamento
-            NomeEntry.Text = string.Empty;
-            ValorEntry.Text = string.Empty;
-            DataValidadeEntry.Text = string.Empty;
 
             Application.Current.MainPage = new ContasAPagarPage();
 

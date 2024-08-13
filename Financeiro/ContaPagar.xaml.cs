@@ -35,5 +35,10 @@ namespace Financeiro
             // Lógica para deletar conta a pagar
         }
         
+        void Conta(object sender, SelectedItemChangedEventArgs e)
+    {
+        var page = new ContasAPagarPage();
+        Application.Current.MainPage = page;
+    }
     }
 }
