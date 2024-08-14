@@ -12,7 +12,6 @@
         </Grid.RowDefinitions>
 
         <StackLayout Orientation="Horizontal" Grid.Row="0">
-            <ImageButton Source="voltar.png" WidthRequest="30" HeightRequest="30" Clicked="OnBackButtonClicked" />
             <Label Text="Contas a pagar"
                    FontAttributes="Bold"
                    FontSize="Large"
@@ -51,9 +50,9 @@
     
 
         <StackLayout Grid.Row="2" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="10">
-            <ImageButton Source="editar.png" WidthRequest="40" HeightRequest="40" Clicked="OnEditButtonClicked" />
             <ImageButton Source="mais.png" WidthRequest="40" HeightRequest="40" Clicked="OnAddButtonClicked" />
             <ImageButton Source="lixeira.png" WidthRequest="40" HeightRequest="40" Clicked="OnDeleteButtonClicked" />
+            <ImageButton Source="voltar.png" WidthRequest="30" HeightRequest="30" Clicked="Botaovoltar"/>
         </StackLayout>
     </Grid>
 

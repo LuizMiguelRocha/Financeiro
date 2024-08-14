@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Financeiro.SobrePage"
-             BackgroundColor="#657b95">
+             BackgroundColor="#5A6B7D">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="50"/>
@@ -10,8 +10,8 @@
         </Grid.ColumnDefinitions>
 
         <!-- Menu Lateral -->
-        <StackLayout Grid.Column="0" BackgroundColor="#9fb8d2">
-            <ImageButton Source="menu.png"  VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="35" HeightRequest="35" Clicked="SobreMenuButton"/>
+        <StackLayout Grid.Column="0" BackgroundColor="#A3B1C2" Padding="10">
+            <ImageButton Source="menu.png"  VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="30" HeightRequest="30" Clicked="SobreMenuButton"/>
         </StackLayout>
 
         <!-- Conteúdo da Página -->

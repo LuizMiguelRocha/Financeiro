@@ -1,10 +1,13 @@
 using System;
+using Controles;
+using Financeiro.Modelos;
 using Microsoft.Maui.Controls;
 
 namespace Financeiro
 {
     public partial class CadastrarDevedor : ContentPage
     {
+         DevControles devControle = new DevControles();
         public CadastrarDevedor()
         {
             InitializeComponent();
@@ -12,9 +15,11 @@ namespace Financeiro
 
         private async void OnSalvarClicked(object sender, EventArgs e)
         {
-            string nome = NomeEntry.Text;
-            string valor = ValorEntry.Text;
-            string pedido = PedidoEntry.Text;
+            var dv = new Devedores();
+            dv.Nome = NomeEntry.Text;
+            dv.Valor = ValorEntry.Text;
+            devControle.CriarOuAtualizar(dv);
+
 
             // Adicione aqui a lógica para salvar os dados
 
@@ -24,9 +29,6 @@ namespace Financeiro
         private async void OnCancelarClicked(object sender, EventArgs e)
         {
             // Limpar campos ou realizar outras ações de cancelamento
-            NomeEntry.Text = string.Empty;
-            ValorEntry.Text = string.Empty;
-            PedidoEntry.Text = string.Empty;
 
             Application.Current.MainPage = new DevedoresPage();
 

@@ -21,22 +21,11 @@
                    Margin="10,0,0,0" />
         </StackLayout>
 
-        <StackLayout Grid.Row="1" Spacing="10">
-            <Frame BackgroundColor="White" CornerRadius="10" Padding="10">
-                <StackLayout>
-                    <Label Text="Nome:" FontSize="Medium" TextColor="Black" />
-                    <Label Text="Valor:" FontSize="Medium" TextColor="Black" />
-                    <Label Text="Pedido:" FontSize="Medium" TextColor="Black" />
-                </StackLayout>
-            </Frame>
-        </StackLayout>
-
         <StackLayout Grid.Row="2" Orientation="Horizontal"  Spacing="10">
             <ImageButton Source="mais.png" WidthRequest="40" HeightRequest="40" Clicked="ButtonMais"/>
         </StackLayout>
 
         <StackLayout Grid.Row="2" Orientation="Horizontal" HorizontalOptions="End" Spacing="10">
-            <ImageButton Source="editar.png" WidthRequest="40" HeightRequest="40" />
             <ImageButton Source="lixeira.png" WidthRequest="40" HeightRequest="40" />
         </StackLayout>
     </Grid>

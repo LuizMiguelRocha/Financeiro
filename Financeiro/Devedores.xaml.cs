@@ -20,11 +20,6 @@ namespace Financeiro
            Application.Current.MainPage = new CadastrarDevedor();
         }
 
-        private void OnEditButtonClicked(object sender, EventArgs e)
-        {
-            // Lógica para editar devedor
-        }
-
         private void OnDeleteButtonClicked(object sender, EventArgs e)
         {
             // Lógica para deletar devedor

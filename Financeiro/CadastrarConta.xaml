@@ -16,6 +16,7 @@
                         <Button Text="Salvar" Clicked="OnSalvarClicked" BackgroundColor="White" TextColor="Black" />
                         <Button Text="Cancelar" Clicked="OnCancelarClicked" BackgroundColor="White" TextColor="Black" Margin="20,0,0,0"/>
                   </StackLayout>
+                    <ImageButton Source="voltar.png" Clicked="Voltar1" WidthRequest="30" HeightRequest="30"/>
                 </StackLayout>
             </Frame>
         </StackLayout>

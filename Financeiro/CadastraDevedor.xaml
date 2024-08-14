@@ -11,7 +11,6 @@
                     <Label Text="Cadastrar Devedor" FontSize="Medium" HorizontalOptions="Center" TextColor="Black" />
                     <Entry x:Name="NomeEntry" Placeholder="Nome" BackgroundColor="White" />
                     <Entry x:Name="ValorEntry" Placeholder="Valor" Keyboard="Numeric" BackgroundColor="White" />
-                    <Entry x:Name="PedidoEntry" Placeholder="Pedido" BackgroundColor="White" />
                     <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="20,0,0,0">
                         <Button Text="Salvar" Clicked="OnSalvarClicked" BackgroundColor="White" TextColor="Black" />
                         <Button Text="Cancelar" Clicked="OnCancelarClicked" BackgroundColor="White" TextColor="Black" Margin="20,0,0,0"/>
