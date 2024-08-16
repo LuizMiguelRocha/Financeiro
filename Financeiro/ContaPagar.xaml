@@ -19,32 +19,32 @@
                    TextColor="Black"
                    Margin="10,0,0,0" />
         </StackLayout>
-         <ListView  x:Name="ContaPagar"
+
+         <ListView  x:Name="ListaContaPagar"
                     HasUnevenRows="True"
                     ItemSelected="Conta"
                     HorizontalOptions="Fill"
-                    VerticalOptions="Fill">
+                    VerticalOptions="Fill"
+                    Grid.Row="1">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
-                    <VerticalStackLayout>
+                    <VerticalStackLayout BackgroundColor="#989b9c">
                         <HorizontalStackLayout>
                             <Label  Text="{Binding Nome}"
                                     FontSize="20"/>
-                            <Label Text="{Binding Sobrenome}"
+                            <Label Text="{Binding Valor}"
                                     Margin="20,0,0,0"
                                     FontSize="20"/>
                         </HorizontalStackLayout>
-                            <Label Text="{Binding Telefone}"
+                            <Label Text="{Binding DataValidade}"
                                 FontSize="14"/>
-                            <Label Text="{Binding Id}"
-                                    FontSize="50"
-                                    TextColor="Pink"/>
                     </VerticalStackLayout> 
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
         </ListView>
+        
 
         
     

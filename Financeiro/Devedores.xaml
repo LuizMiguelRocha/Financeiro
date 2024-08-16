@@ -21,6 +21,30 @@
                    Margin="10,0,0,0" />
         </StackLayout>
 
+        <ListView  x:Name="ListaDevedores"
+                    HasUnevenRows="True"
+                    ItemSelected="Dev"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Fill"
+                    Grid.Row="1">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <VerticalStackLayout BackgroundColor="#989b9c">
+                        <HorizontalStackLayout>
+                            <Label  Text="{Binding Nome}"
+                                    FontSize="20"/>
+                            <Label Text="{Binding Valor}"
+                                    Margin="20,0,0,0"
+                                    FontSize="20"/>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout> 
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+        </ListView>
+
+
         <StackLayout Grid.Row="2" Orientation="Horizontal"  Spacing="10">
             <ImageButton Source="mais.png" WidthRequest="40" HeightRequest="40" Clicked="ButtonMais"/>
         </StackLayout>

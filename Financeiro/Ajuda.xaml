@@ -16,7 +16,7 @@
 
         <!-- Sidebar -->
         <StackLayout BackgroundColor="#A3B1C2" Grid.RowSpan="2" Grid.Column="0" Padding="10">
-            <ImageButton Source="menu.png" WidthRequest="30" HeightRequest="30" Clicked="OnBackButtonClicked" />
+            <ImageButton Source="menu.png" WidthRequest="35" HeightRequest="35" Clicked="OnBackButtonClicked" />
         </StackLayout>
 
         <!-- Header -->

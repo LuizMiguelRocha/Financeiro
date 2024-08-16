@@ -5,9 +5,13 @@ namespace Financeiro
 {
     public partial class ContasAPagarPage : ContentPage
     {
+
+        Controles.PagarControle pagarControles = new Controles.PagarControle();
         public ContasAPagarPage()
         {
             InitializeComponent();
+
+            ListaContaPagar.ItemsSource = pagarControles.LerTodos();
         }
 
         private void Botaovoltar(object sender, EventArgs e)
