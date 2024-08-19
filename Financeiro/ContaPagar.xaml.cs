@@ -24,11 +24,7 @@ namespace Financeiro
             Application.Current.MainPage = new CadastrarConta();
         }
 
-        private void OnDeleteButtonClicked(object sender, EventArgs e)
-        {
-            // Lógica para deletar conta a pagar
-        }
-        
+    
         void Conta(object sender, SelectedItemChangedEventArgs e)
     {
         var page = new ContasAPagarPage();

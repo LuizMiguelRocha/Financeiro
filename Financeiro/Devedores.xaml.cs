@@ -24,14 +24,11 @@ namespace Financeiro
            Application.Current.MainPage = new CadastrarDevedor();
         }
 
-        private void OnDeleteButtonClicked(object sender, EventArgs e)
-        {
-            // Lógica para deletar devedor
-        }
 
          void Dev(object sender, SelectedItemChangedEventArgs e)
     {
-        var page = new DevedoresPage();
+        var page = new CadastrarDevedor();
+        page.devedor = e.SelectedItem as Devedores;
         Application.Current.MainPage = page;
     }
     }

@@ -9,11 +9,12 @@
                 <StackLayout>
                     <Image Source="user_icon.png" HorizontalOptions="Center" />
                     <Label Text="Cadastrar Devedor" FontSize="Medium" HorizontalOptions="Center" TextColor="Black" />
-                    <Entry x:Name="NomeEntry" Placeholder="Nome" BackgroundColor="White" />
-                    <Entry x:Name="ValorEntry" Placeholder="Valor" Keyboard="Numeric" BackgroundColor="White" />
+                    <Entry x:Name="NomeEntry" Placeholder="Nome" BackgroundColor="#78909C" TextColor="Black" />
+                    <Entry x:Name="ValorEntry" Placeholder="Valor" Keyboard="Numeric" BackgroundColor="#78909C" TextColor="Black" />
                     <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="20,0,0,0">
                         <Button Text="Salvar" Clicked="OnSalvarClicked" BackgroundColor="White" TextColor="Black" />
                         <Button Text="Cancelar" Clicked="OnCancelarClicked" BackgroundColor="White" TextColor="Black" Margin="20,0,0,0"/>
+                        <ImageButton Source="lixeira.png" WidthRequest="40" HeightRequest="30" Clicked="OnDeleteButtonClicked" />
                     </StackLayout>
                      <ImageButton Source="voltar.png" WidthRequest="30" HeightRequest="30" Clicked="VoltarButton2" />
                 </StackLayout>

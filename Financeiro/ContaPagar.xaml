@@ -32,13 +32,16 @@
                     <VerticalStackLayout BackgroundColor="#989b9c">
                         <HorizontalStackLayout>
                             <Label  Text="{Binding Nome}"
-                                    FontSize="20"/>
+                                    FontSize="20"
+                                    TextColor="Black"/>
                             <Label Text="{Binding Valor}"
                                     Margin="20,0,0,0"
-                                    FontSize="20"/>
+                                    FontSize="20"
+                                    TextColor="Black"/>
                         </HorizontalStackLayout>
                             <Label Text="{Binding DataValidade}"
-                                FontSize="14"/>
+                                    FontSize="14"
+                                    TextColor="Black"   />
                     </VerticalStackLayout> 
                 </ViewCell>
             </DataTemplate>
@@ -51,7 +54,6 @@
 
         <StackLayout Grid.Row="2" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="10">
             <ImageButton Source="mais.png" WidthRequest="40" HeightRequest="40" Clicked="OnAddButtonClicked" />
-            <ImageButton Source="lixeira.png" WidthRequest="40" HeightRequest="40" Clicked="OnDeleteButtonClicked" />
             <ImageButton Source="voltar.png" WidthRequest="30" HeightRequest="30" Clicked="Botaovoltar"/>
         </StackLayout>
     </Grid>

@@ -7,6 +7,7 @@ namespace Financeiro
 {
     public partial class CadastrarDevedor : ContentPage
     {
+        Devedores devedores;
          DevControles devControle = new DevControles();
         public CadastrarDevedor()
         {
@@ -38,5 +39,12 @@ namespace Financeiro
         {
            Application.Current.MainPage = new DevedoresPage();
         }
+
+         private void OnDeleteButtonClicked(object sender, EventArgs e)
+        {
+            NomeEntry.Text = string.Empty;
+            ValorEntry.Text = string.Empty;
+        }
+        
     }
 }

@@ -33,10 +33,12 @@
                     <VerticalStackLayout BackgroundColor="#989b9c">
                         <HorizontalStackLayout>
                             <Label  Text="{Binding Nome}"
-                                    FontSize="20"/>
+                                    FontSize="20"
+                                    TextColor="Black"/>
                             <Label Text="{Binding Valor}"
                                     Margin="20,0,0,0"
-                                    FontSize="20"/>
+                                    FontSize="20"
+                                    TextColor="Black"/>
                         </HorizontalStackLayout>
                     </VerticalStackLayout> 
                 </ViewCell>
@@ -47,10 +49,6 @@
 
         <StackLayout Grid.Row="2" Orientation="Horizontal"  Spacing="10">
             <ImageButton Source="mais.png" WidthRequest="40" HeightRequest="40" Clicked="ButtonMais"/>
-        </StackLayout>
-
-        <StackLayout Grid.Row="2" Orientation="Horizontal" HorizontalOptions="End" Spacing="10">
-            <ImageButton Source="lixeira.png" WidthRequest="40" HeightRequest="40" />
         </StackLayout>
     </Grid>
 
