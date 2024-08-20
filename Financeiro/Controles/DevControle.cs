@@ -4,6 +4,7 @@ namespace Controles;
 
 public class DevControles : BaseControle
 {
+
   //----------------------------------------------------------------------------
 
   public DevControles() : base()
@@ -28,4 +29,10 @@ public class DevControles : BaseControle
   }
 
   //----------------------------------------------------------------------------
+
+    public virtual void Apagar(int idDevedores)
+  {
+    var collection = liteDB.GetCollection<Devedores>(NomeDaTabela);
+    collection.Delete(idDevedores);
+  }
 }

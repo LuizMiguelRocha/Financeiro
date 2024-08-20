@@ -8,6 +8,8 @@
             <Frame CornerRadius="20" BackgroundColor="#78909C" Padding="20">
                 <StackLayout>
                     <Image Source="user_icon.png" HorizontalOptions="Center" />
+                    <Label Text="ID:" />
+                    <Label x:Name="IdLabel"/>
                     <Label Text="Cadastrar Devedor" FontSize="Medium" HorizontalOptions="Center" TextColor="Black" />
                     <Entry x:Name="NomeEntry" Placeholder="Nome" BackgroundColor="#78909C" TextColor="Black" />
                     <Entry x:Name="ValorEntry" Placeholder="Valor" Keyboard="Numeric" BackgroundColor="#78909C" TextColor="Black" />

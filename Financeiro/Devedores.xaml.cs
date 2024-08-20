@@ -1,12 +1,14 @@
 using System;
 using Controles;
+using Financeiro.Modelos;
 using Microsoft.Maui.Controls;
 
 namespace Financeiro
 {
     public partial class DevedoresPage : ContentPage
     {
-         Controles.DevControles devControles = new Controles.DevControles();
+
+        Controles.DevControles devControles = new Controles.DevControles();
         public DevedoresPage()
         {
             InitializeComponent();
@@ -21,15 +23,16 @@ namespace Financeiro
 
         private void ButtonMais(object sender, EventArgs e)
         {
-           Application.Current.MainPage = new CadastrarDevedor();
+            Application.Current.MainPage = new CadastrarDevedor();
         }
 
 
-         void Dev(object sender, SelectedItemChangedEventArgs e)
-    {
-        var page = new CadastrarDevedor();
-        page.devedor = e.SelectedItem as Devedores;
-        Application.Current.MainPage = page;
-    }
+        void Dev(object sender, SelectedItemChangedEventArgs e)
+        {
+            var page = new CadastrarDevedor();
+            page.devedores = e.SelectedItem as Devedores;
+            Application.Current.MainPage = page;
+        }
+
     }
 }

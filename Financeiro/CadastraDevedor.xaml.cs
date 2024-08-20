@@ -7,8 +7,8 @@ namespace Financeiro
 {
     public partial class CadastrarDevedor : ContentPage
     {
-        Devedores devedores;
-         DevControles devControle = new DevControles();
+        public Devedores devedores { get; set; }
+        DevControles devControle = new DevControles();
         public CadastrarDevedor()
         {
             InitializeComponent();
@@ -35,16 +35,43 @@ namespace Financeiro
 
             await DisplayAlert("Cancelado", "Ação cancelada", "OK");
         }
-               private void VoltarButton2(object sender, EventArgs e)
+        private void VoltarButton2(object sender, EventArgs e)
         {
-           Application.Current.MainPage = new DevedoresPage();
+            Application.Current.MainPage = new DevedoresPage();
         }
 
-         private void OnDeleteButtonClicked(object sender, EventArgs e)
+        private async void OnDeleteButtonClicked(object sender, EventArgs e)
         {
             NomeEntry.Text = string.Empty;
             ValorEntry.Text = string.Empty;
+
+            if (devedores == null)
+                await DisplayAlert("Erro", "Nenhum cliente para excluir", "ok");
+            else if (await DisplayAlert("Excluir", "Tem certeza que deseja excluir esse cliente?", "Excluir Cliente", "cancelar"))
+            {
+                devControle.Apagar(devedores.Id);
+            }
         }
-        
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            if (devedores != null)
+            {
+                 IdLabel.Text        = devedores.Id
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 .ToString();
+                NomeEntry.Text = devedores.Nome;
+                ValorEntry.Text = devedores.Valor;
+            }
+        }
+
     }
 }
