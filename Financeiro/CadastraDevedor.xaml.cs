@@ -17,12 +17,12 @@ namespace Financeiro
         private async void OnSalvarClicked(object sender, EventArgs e)
         {
             var dv = new Devedores();
+            dv.Id = 0;
             dv.Nome = NomeEntry.Text;
             dv.Valor = ValorEntry.Text;
             devControle.CriarOuAtualizar(dv);
 
-
-            // Adicione aqui a lógica para salvar os dados
+            Application.Current.MainPage = new DevedoresPage();
 
             await DisplayAlert("Sucesso", "Dados salvos com sucesso", "OK");
         }
@@ -42,6 +42,7 @@ namespace Financeiro
 
         private async void OnDeleteButtonClicked(object sender, EventArgs e)
         {
+            IdLabel.Text = devedores.Id.ToString();
             NomeEntry.Text = string.Empty;
             ValorEntry.Text = string.Empty;
 
@@ -60,13 +61,6 @@ namespace Financeiro
             if (devedores != null)
             {
                  IdLabel.Text        = devedores.Id
-                 
-                 
-                 
-                 
-                 
-                 
-                 
                  .ToString();
                 NomeEntry.Text = devedores.Nome;
                 ValorEntry.Text = devedores.Valor;

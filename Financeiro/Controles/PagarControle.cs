@@ -28,4 +28,10 @@ public class PagarControle : BaseControle
   }
 
   //----------------------------------------------------------------------------
+
+   public virtual void Apagar(int idContaPagar)
+  {
+    var collection = liteDB.GetCollection<Devedores>(NomeDaTabela);
+    collection.Delete(idContaPagar);
+  }
 }

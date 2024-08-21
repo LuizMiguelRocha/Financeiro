@@ -17,7 +17,7 @@
         <!-- Conteúdo da Página -->
         <StackLayout Grid.Column="1" Padding="20">
             <Label Text="Sobre" FontSize="30" HorizontalOptions="Center" TextColor="Black"/>
-            <Label Text="Esse software foi criado com o objetivo de ajudar você com as suas contas a pagar e a receber caso seja o o seu objetivo" 
+            <Label Text="Esse software foi criado com o objetivo de ajudar você com as suas contas a pagar e a receber caso seja o o seu objetivo." 
                    FontSize="25" TextColor="Black" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
         </StackLayout>
     </Grid>

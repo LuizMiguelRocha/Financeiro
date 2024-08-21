@@ -15,7 +15,7 @@
             <ImageButton Source="voltar.png" WidthRequest="30" HeightRequest="30" Clicked="VoltarButton" />
             <Label Text="Devedores"
                    FontAttributes="Bold"
-                   FontSize="Large"
+                   FontSize="25"
                    VerticalOptions="Center"
                    TextColor="Black"
                    Margin="10,0,0,0" />

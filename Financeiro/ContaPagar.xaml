@@ -14,7 +14,7 @@
         <StackLayout Orientation="Horizontal" Grid.Row="0">
             <Label Text="Contas a pagar"
                    FontAttributes="Bold"
-                   FontSize="Large"
+                   FontSize="25"
                    VerticalOptions="Center"
                    TextColor="Black"
                    Margin="10,0,0,0" />
@@ -40,7 +40,7 @@
                                     TextColor="Black"/>
                         </HorizontalStackLayout>
                             <Label Text="{Binding DataValidade}"
-                                    FontSize="14"
+                                    FontSize="15"
                                     TextColor="Black"   />
                     </VerticalStackLayout> 
                 </ViewCell>

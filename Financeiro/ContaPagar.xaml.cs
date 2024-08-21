@@ -1,4 +1,5 @@
 using System;
+using Financeiro.Modelos;
 using Microsoft.Maui.Controls;
 
 namespace Financeiro
@@ -27,8 +28,9 @@ namespace Financeiro
     
         void Conta(object sender, SelectedItemChangedEventArgs e)
     {
-        var page = new ContasAPagarPage();
-        Application.Current.MainPage = page;
+        var pape = new CadastrarConta();
+        pape.contapagar = e.SelectedItem as ContaPagar;
+        Application.Current.MainPage = pape;
     }
     }
 }
