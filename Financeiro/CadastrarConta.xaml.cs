@@ -53,6 +53,7 @@ namespace Financeiro
             else if (await DisplayAlert("Excluir", "Tem certeza que deseja excluir esse cliente?", "Excluir Cliente", "cancelar"))
             {
                 pagarControle.Apagar(contapagar.Id);
+                Application.Current.MainPage = new ContasAPagarPage();
             }
         }
 

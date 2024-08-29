@@ -51,6 +51,7 @@ namespace Financeiro
             else if (await DisplayAlert("Excluir", "Tem certeza que deseja excluir esse cliente?", "Excluir Cliente", "cancelar"))
             {
                 devControle.Apagar(devedores.Id);
+                 Application.Current.MainPage = new DevedoresPage();
             }
         }
 
